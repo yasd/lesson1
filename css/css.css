@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
-<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
-<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>HaNi9</title>
-		<link rel="icon" href="img/nine.ico" />
-		<meta name="author" content="HaNi6">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style type="text/css">
-		body{
+body{
 				background-color: black;
 			}
 			
@@ -150,50 +138,3 @@
 				transform: rotateY(-270deg) translateX(100px) translateZ(100px); 
 				transform-origin:top right ;
 			}
-	</style>
-	</head>
-	<body>
-		<div class="xuanzhuan">
-			<div class="center">
-				<div class="wrap">
-					<div class="cube" align="center">
-						
-						<div class="qm">
-							<h2></h2>
-						</div>
-						<div class="hm">
-							<h2></h2>
-						</div>
-						<div class="sm">
-							<h2></h2>
-						</div>
-						<div class="xm">
-							<h2></h2>
-						</div>
-						<div class="zm">
-							<h2></h2>
-						</div>
-						<div class="ym">
-							<h2></h2>
-						</div>
-						<i class="i_qm"></i>
-						<i class="i_hm"></i>
-						<i class="i_sm"></i>
-						<i class="i_xm"></i>
-						<i class="i_zm"></i>
-						<i class="i_ym"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript">
-			window.onload=function(){
-			document.getElementsByTagName('body')[0].className = 'load';
-		};
-
-		if((window.location != window.parent.location && !(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))) == true){
-	    	document.documentElement.style.overflowY = "scroll";
-		}
-		</script>
-	</body>
-</html>
