@@ -1,346 +1,71 @@
 <!DOCTYPE html>
-<!--[if IE 6]>			<html class="ie ie6"> <![endif]-->
-<!--[if IE 7]>			<html class="ie ie7"> <![endif]-->
-<!--[if gt IE 9]><!--><!--<![endif]-->
-<!--[if lte IE 6]><![endif]-->
-<!--[if lte IE 7]><![endif]-->
-<!--[if gte IE 7]><![endif]-->
 <html>
-	
-
 
 	<head>
-		<meta charset="utf-8" />
-		<title>HaNi9</title>
-		<link rel="icon" href="img/nine.ico" />
-		<meta name="author" content="HaNi6">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script type="text/javascript" src="/Js/lazyload/jquery.js"></script>
-　		<script type="text/javascript" src="/Js/lazyload/jquery.lazyload.js"></script>
-		<style type="text/css">
-			body {
-				background-color: black;
-			}
-			
-			.wrap {
-				margin-top: 150px;
-				perspective: 1000px;
-				perspective-origin: 50% 50%;
-			}
-			
-			.cube {
-				margin: auto;
-				position: relative;
-				width: 200px;
-				height: 200px;
-				transform-style: preserve-3d;
-				-webkit-transform-style: preserve-3d;
-				-moz-transform-style: preserve-3d;
-			}
-			
-			.cube div {
-				position: absolute;
-				padding: 10px;
-				box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				-webkit-box-sizing: border-box;
-				width: 100%;
-				height: 100%;
-				opacity: 0.9;
-				background-color: #000;
-				border: 1px solid #eee;
-				color: gold;
-				font-size: 16px;
-				transition: all 1s linear;
-				-moz-transition: all 1s linear;
-				-webkit-transition: all 1s linear;
-				-ms-transition: all 1s linear;
-				background-size: auto;
-			}
-			
-			.qm {
-				background: url(img/1.png);
-				transform: translateZ(100px);
-				-moz-transform: translateZ(100px);
-				-ms-transform: translateZ(100px);
-				-webkit-transform: translateZ(100px);
-			}
-			
-			.hm {
-				background: url(img/2.png);
-				transform: translateZ(-100px) rotateY(180deg);
-				-moz-transform: translateZ(-100px) rotateY(180deg);
-				-webkit-transform: translateZ(-100px) rotateY(180deg);
-				-ms-transform: translateZ(-100px) rotateY(180deg);
-			}
-			
-			.sm {
-				background: url(img/3.png);
-				transform: rotateX(-270deg) translateY(-100px);
-				transform-origin: top right;
-				-moz-transform: rotateX(-270deg) translateY(-100px);
-				-moz-transform-origin: top right;
-				-ms-transform: rotateX(-270deg) translateY(-100px);
-				-ms-transform-origin: top right;
-				-webkit-transform: rotateX(-270deg) translateY(-100px);
-				-webkit-transform-origin: top right;
-			}
-			
-			.xm {
-				background: url(img/4.png);
-				transform: rotateX(270deg) translateY(100px);
-				transform-origin: bottom left;
-				-moz-transform: rotateX(270deg) translateY(100px);
-				-moz-transform-origin: bottom left;
-				-ms-transform: rotateX(270deg) translateY(100px);
-				-ms-transform-origin: bottom left;
-				-webkit-transform: rotateX(270deg) translateY(100px);
-				-webkit-transform-origin: bottom left;
-			}
-			
-			.zm {
-				background: url(img/5.png);
-				transform: rotateY(270deg) translateX(-100px);
-				transform-origin: center left;
-				-moz-transform: rotateY(270deg) translateX(-100px);
-				-moz-transform-origin: center left;
-				-ms-transform: rotateY(270deg) translateX(-100px);
-				-ms-transform-origin: center left;
-				-webkit-transform: rotateY(270deg) translateX(-100px);
-				-webkit-transform-origin: center left;
-			}
-			
-			.ym {
-				background: url(img/6.png);
-				transform: rotateY(-270deg) translateX(100px);
-				transform-origin: top right;
-				-moz-transform: rotateY(-270deg) translateX(100px);
-				-moz-transform-origin: top right;
-				-ms-transform: rotateY(-270deg) translateX(100px);
-				-ms-transform-origin: top right;
-				-webkit-transform: rotateY(-270deg) translateX(100px);
-				-webkit-transform-origin: top right;
-			}
-			
-			i {
-				position: absolute;
-				top: 50px;
-				left: 50px;
-				width: 100px;
-				height: 100px;
-				display: block;
-			}
-			
-			.i_qm {
-				background: url(img/11.png);
-				transform: translateZ(50px);
-				-moz-transform: translateZ(50px);
-				-ms-transform: translateZ(50px);
-				-webkit-transform: translateZ(50px);
-			}
-			
-			.i_hm {
-				background: url(img/22.png);
-				transform: translateZ(-50px) rotateY(180deg);
-				-moz-transform: translateZ(-50px) rotateY(180deg);
-				-ms-transform: translateZ(-50px) rotateY(180deg);
-				-webkit-transform: translateZ(-50px) rotateY(180deg);
-			}
-			
-			.i_sm {
-				background: url(img/33.png);
-				transform: rotateX(-270deg) translateY(-50px);
-				transform-origin: left top;
-				-moz-transform: rotateX(-270deg) translateY(-50px);
-				-moz-transform-origin: left top;
-				-ms-transform: rotateX(-270deg) translateY(-50px);
-				-ms-transform-origin: left top;
-				-webkit-transform: rotateX(-270deg) translateY(-50px);
-				-webkit-transform-origin: left top;
-			}
-			
-			.i_xm {
-				background: url(img/44.png);
-				transform: rotateX(270deg) translateY(50px);
-				transform-origin: left bottom;
-				-moz-transform: rotateX(270deg) translateY(50px);
-				-moz-transform-origin: left bottom;
-				-ms-transform: rotateX(270deg) translateY(50px);
-				-ms-transform-origin: left bottom;
-				-webkit-transform: rotateX(270deg) translateY(50px);
-				-webkit-transform-origin: left bottom;
-			}
-			
-			.i_zm {
-				background: url(img/55.png);
-				transform: rotateY(270deg) translateX(-50px);
-				transform-origin: left bottom;
-				-moz-transform: rotateY(270deg) translateX(-50px);
-				-moz-transform-origin: left bottom;
-				-ms-transform: rotateY(270deg) translateX(-50px);
-				-ms-transform-origin: left bottom;
-				-webkit-transform: rotateY(270deg) translateX(-50px);
-				-webkit-transform-origin: left bottom;
-			}
-			
-			.i_ym {
-				background: url(img/66.png);
-				transform: rotateY(-270deg) translateX(50px);
-				transform-origin: top right;
-				-moz-transform: rotateY(-270deg) translateX(50px);
-				-moz-transform-origin: top right;
-				-ms-transform: rotateY(-270deg) translateX(50px);
-				-ms-transform-origin: top right;
-				-webkit-transform: rotateY(-270deg) translateX(50px);
-				-webkit-transform-origin: top right;
-			}
-			
-			.cube {
-				animation: rot 20s infinite linear;
-				-ms-animation: rot 20s infinite linear;
-				-webkit-animation: rot 20s infinite linear;
-				-moz-animation: rot 20s infinite linear;
-			}
-			
-			@keyframes rot {
-				from {
-					transform: rotateX(0deg) rotateY(0deg);
-					-moz-transform: rotateX(0deg) rotateY(0deg);
-					-ms-transform: rotateX(0deg) rotateY(0deg);
-					-webkit-transform: rotateX(0deg) rotateY(0deg);
-				}
-				to {
-					transform: rotateX(360deg) rotateY(360deg);
-					-moz-transform: rotateX(360deg) rotateY(360deg);
-					-ms-transform: rotateX(360deg) rotateY(360deg);
-					-webkit-transform: rotateX(360deg) rotateY(360deg);
-				}
-			}
-			
-			.cube:hover .qm {
-				background: url(img/1.png);
-				transform: translateZ(200px);
-				-moz-orient: translateZ(200px);
-				-moz-transform: translateZ(200px);
-				-ms-transform: translateZ(200px);
-				-webkit-transform: translateZ(200px);
-			}
-			
-			.cube:hover .hm {
-				background: url(img/2.png);
-				transform: translateZ(-200px) rotateY(180deg);
-				-moz-orient: translateZ(-200px) rotateY(180deg);
-				-moz-transform: translateZ(-200px) rotateY(180deg);
-				-ms-transform: translateZ(-200px) rotateY(180deg);
-				-webkit-transform: translateZ(-200px) rotateY(180deg);
-			}
-			
-			.cube:hover .sm {
-				background: url(img/3.png);
-				transform: rotateX(-270deg) translateY(-100px) translateZ(100px);
-				-moz-transform: rotateX(-270deg) translateY(-100px) translateZ(100px);
-				-ms-transform: rotateX(-270deg) translateY(-100px) translateZ(100px);
-				-webkit-transform: rotateX(-270deg) translateY(-100px) translateZ(100px);
-				-webkit-transform-origin: top right;
-				-moz-transform-origin: top right;
-				-ms-transform-origin: top right;
-				transform-origin: top right;
-				-moz-orient: top right;
-			}
-			
-			.cube:hover .xm {
-				background: url(img/4.png);
-				transform: rotateX(270deg) translateY(100px) translateZ(100px);
-				-moz-transform: rotateX(270deg) translateY(100px) translateZ(100px);
-				-ms-transform: rotateX(270deg) translateY(100px) translateZ(100px);
-				-webkit-transform: rotateX(270deg) translateY(100px) translateZ(100px);
-				transform-origin: bottom left;
-				-webkit-transform-origin: bottom left;
-				-ms-transform-origin: bottom left;
-				-moz-transform-origin: bottom left;
-				-moz-orient: bottom left;
-			}
-			
-			.cube:hover .zm {
-				background: url(img/5.png);
-				transform: rotateY(270deg) translateX(-100px) translateZ(100px);
-				-moz-transform: rotateY(270deg) translateX(-100px) translateZ(100px);
-				-ms-transform: rotateY(270deg) translateX(-100px) translateZ(100px);
-				-webkit-transform: rotateY(270deg) translateX(-100px) translateZ(100px);
-				transform-origin: center left;
-				-moz-transform-origin: center left;
-				-ms-transform-origin: center left;
-				-webkit-transform-origin: center left;
-				-moz-orient: center left;
-			}
-			
-			.cube:hover .ym {
-				background: url(img/6.png);
-				transform: rotateY(-270deg) translateX(100px) translateZ(100px);
-				-moz-transform: rotateY(-270deg) translateX(100px) translateZ(100px);
-				-ms-transform: rotateY(-270deg) translateX(100px) translateZ(100px);
-				-webkit-transform: rotateY(-270deg) translateX(100px) translateZ(100px);
-				transform-origin: top right;
-				-moz-transform-origin: top right;
-				-ms-transform-origin: top right;
-				-webkit-transform-origin: top right;
-			}
-			p{
-				color: #FFFFFF;
-				font-weight: bold;
-			}
-		</style>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
 	</head>
 
 	<body>
-		<div class="xuanzhuan">
-			<div class="center">
-				<div class="wrap">
-					<div class="cube" align="center">
-
-						<div class="qm">
-							<h2></h2>
-						</div>
-						<div class="hm">
-							<h2></h2>
-						</div>
-						<div class="sm">
-							<h2></h2>
-						</div>
-						<div class="xm">
-							<h2></h2>
-						</div>
-						<div class="zm">
-							<h2></h2>
-						</div>
-						<div class="ym">
-							<h2></h2>
-						</div>
-						<i class="i_qm"></i>
-						<i class="i_hm"></i>
-						<i class="i_sm"></i>
-						<i class="i_xm"></i>
-						<i class="i_zm"></i>
-						<i class="i_ym"></i>
-					</div>
-				</div>
+		
+		<div id="box">
+			<div class="link link-miss">
+				<span class="icon"></span>
+				<a href="#" class="button" data-text="My mission is clear">
+					<span class="line line-top"></span>
+					<span class="line line-left"></span>
+					<span class="line line-right"></span>
+					<span class="line line-bottom"></span> MISSION
+				</a>
+			</div>
+			<div class="link link-play">
+				<span class="icon"></span>
+				<a href="#" class="button" data-text="This is my playground">
+					<span class="line line-top"></span>
+					<span class="line line-left"></span>
+					<span class="line line-right"></span>
+					<span class="line line-bottom"></span> PLAY
+				</a>
+			</div>
+			<div class="link link-touch">
+				<span class="icon"></span>
+				<a href="#" class="button" data-text="Lets do something together">
+					<span class="line line-top"></span>
+					<span class="line line-left"></span>
+					<span class="line line-right"></span>
+					<span class="line line-bottom"></span> TOUCH
+				</a>
+			</div>
+			<div class="tooltip">
+				<em class="e"></em>
+				<span></span>
 			</div>
 		</div>
-		<p style="margin:220px 0 0 600px;">QQ:1256199465</p>
-		<p style="margin:0px 0 0 500px;">©2016 Shaowe Online&nbsp;Inc&nbsp;All rights reserved</p>
-		
+		<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 		<script type="text/javascript">
-			window.onload = function() {
-				document.getElementsByTagName('body')[0].className = 'load';
-			};
-
-			if((window.location != window.parent.location && !(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))) == true) {
-				document.documentElement.style.overflowY = "scroll";
-			}
-			<script type="text/javascript">
-　				　$("img").lazyload();
-　　</script>
+			$(function() {
+							$(".button").hover(function() { //hover有2个参数都为function
+								var t = $(this).attr("data-text"); //定义t=当前指针指向的属性，我们用attr获取属性
+								$(".tooltip em").text(t);//动态获取内容并添加
+								//获取距离左边的位置
+								var leftloc=$(this).offset().left; //与按钮左对齐
+								var addleft = ($(".tooltip").outerWidth() - $(this).outerWidth()) / 2;
+								//首先动态获取 获得tooltip的宽度减去按钮的宽度
+								$(".tooltip").css({
+									opacity: 0,
+									left: leftloc - addleft, //然后在这里：距离左边的位置减去
+									top: 140
+								}).animate({
+									top: 195,
+									opacity: 0.9
+								}, 400).removeClass(".e").removeAttr("t")
+							}, function() {
+							
+							})
+							
+					})
 		</script>
 	</body>
 
-	</html>
+</html>
