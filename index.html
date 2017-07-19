@@ -1,204 +1,961 @@
-<!DOCTYPE html>
-<!--[if IE 6]>			<html class="ie ie6"> <![endif]-->
-<!--[if IE 7]>			<html class="ie ie7"> <![endif]-->
-<!--[if gt IE 9]><!--><!--<![endif]-->
-<!--[if lte IE 6]><![endif]-->
-<!--[if lte IE 7]><![endif]-->
-<!--[if gte IE 7]><![endif]-->
+<!DOCTYPE HTML>
 <html>
-
 	<head>
-		<meta charset="utf-8" />
-		<title>Shaowe</title>
-		<link rel="icon" href="img/nine.ico" />
-		<meta name="author" content="HaNi6">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style type="text/css">
-			.a{
-				width: 250px;
-				height: 300px;
-				/*border: 1px solid black;*/
-				display: inline-block;
-				position: relative;
-				
-			}
-			/*.b{
-				width: 250px;
-				height: 300px;
-				display: inline-block;
-				position: relative;
-			}*/
-			.yan{
-				width: 250px;
-				height: 40px;
-				background-color: rgba(116, 61, 10, .6);
-				position: absolute;
-				color: white;
-				font-size: 16px;
-				bottom: 0;
-				
-			}
-	
-			b{
-				padding: 6px;
-				float:left;
-				color: #FFFFFF;
-				/*visibility: hidden;*/
-			}
-			h6{
-				/*visibility: hidden;*/
-				font-size: 15px;
-				color: #FFFFFF;
-				font-family: courier;
-				text-indent: 1em;
-				padding: 0px  10px 0 10px;
-				
-			}
-			.content{
-				position: absolute;
-				/*display: none;*/
-				width: 250px;
-				height:300px;
-				background-color:rgba(116, 61, 10,0.6);
-				position: absolute;
-				
-				/*visibility: hidden;*/
-			}
-			
-		</style>
-	</head>
-
-	<body style="text-align: center;padding-top:80px;background-image: url(http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_02.jpg);">
-		<div>
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">首席颜值官&nbsp;江一燕</p>
-				</div>
-				<div class="content" hidden>
-					<b>丨江一燕</b>
-				  <h6> 
-				 	我是小佰，今天跟大家分享#御·姐36计#第1计：御·姐养成计。有才会摄影、有爱懂生活，她是御·姐——江一燕，想像她一样驾“御”时光吗？那你还不快跟江一燕一起使用佰草集御五行焕肌系列，做一个对生活有态度，对自我有追求；完美兼顾时尚与优雅，享受独立与自主的畅快；御龄有方，无惧岁月流转的御·姐！
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_01.jpg" />
-			</div>
-
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">摄影师&nbsp;梓瞳</p>
-				</div>
-				<div class="content" hidden>
-					<b>丨梓&nbsp;瞳</b>
-				  <h6>
-				  	旅行养美计！旅游可以舒缓身心、开拓眼界，成就由内而外的美丽。旅行中除了随身必备相机，别忘了带上佰草集防晒霜和“鎏金瓶”，修复旅行中的肌肤“小疲劳”，扫除细纹、脆弱和黯沉，轻松hold住御·姐范儿，拍出美美的旅行大片！
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_03.jpg" />
-			</div>
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">时尚达人&nbsp;黎洛KIKI</p>
-				<!--<p style="padding-top: 10px;">摄影师&nbsp;梓瞳</p>-->
-				</div>
-				<div class="content" hidden>
-					<b>| 黎洛KIKI</b>
-				  <h6> 
-				 	金冬时尚计！又到了一年时尚潮人们将金饰拽出门“炫富”的时候~在衣着逐渐变得灰暗的秋冬，没有什么珠宝比具有力量感和温暖颜色的金饰更百搭，提到金饰不得不提皇家传承的花丝镶嵌工艺。而这一次，佰草集推出的天价面霜，让人佩服！24K黄金手工打造的花丝镶嵌顶盖，耗时数月完成，精雕细琢让它成为护肤界的稀世珍品，这个秋冬若入，时尚便是你的天下~
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_27.jpg"/>
-			</div>
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">情感作家&nbsp;无厘头学姐</p>
-				<!--<p style="padding-top: 10px;">摄影师&nbsp;梓瞳</p>-->
-				</div>
-				<div class="content" hidden>
-					<b>丨无厘头学姐</b>
-				  <h6> 
-				 	爱情至上计！塔索曾经说过，任何时候为爱情付出的一切都不会白白浪费。爱情与其他事情一样，你的付出即使没有回报，但也一定有它存在的价值，护肤也是如此，最近写书熬夜严重，原以为皮肤会变差变暗沉，不曾想佰草集鎏金瓶却持续给我提供了肌肤能量，果然每天的按摩使用不是白费的，非常奏效！
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_32.jpg"/>
-			</div>
-		</div>
-		<div>
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">美食家&nbsp;周若雪Patty</p>
-				<!--<p style="padding-top: 10px;">摄影师&nbsp;梓瞳</p>-->
-				</div>
-				<div class="content" hidden>
-					<b>丨周若雪&nbsp;Patty</b>
-				  <h6> 
-				 	美肌能量计！每次说走就走的旅行，除了兴奋与激动，还伴随着各种困惑，比如长时间的飞行让人抑郁，这时候你需要一路好歌，推荐Bob Dylan的那些民谣。然鹅，还有高空的干燥怎么办？我会交给“御·姐”时代的最佳带盐人——佰草集鎏金瓶，带上它的五行护肤能量走天涯，我的美肌与眼前的美景更配！
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_13.jpg"/>
-			</div>
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">时尚达人&nbsp;刘小懒</p>
-				<!--<p style="padding-top: 10px;">摄影师&nbsp;梓瞳</p>-->
-				</div>
-				<div class="content" hidden>
-					<b>丨刘小懒</b>
-				  <h6> 
-				 	秋冬穿搭计！这个秋冬，复古元素依旧火热，无论是衬衫配上阔腿裤的率性装扮还是露肩毛衣的性感优雅都是御姐系的最爱。美一时不难，保持美却需要我们持之以久的保养，佰草集鎏金瓶细腻的精华质地，为秋冬烦恼的肌无力解乏，从根源焕活肌肤，感受持久的“御”龄之力吧！
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_15.jpg"/>
-			</div>
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">模特&nbsp;樱萘</p>
-				<!--<p style="padding-top: 10px;">摄影师&nbsp;梓瞳</p>-->
-				</div>
-				<div class="content" hidden>
-					<b>丨樱萘</b>
-				  <h6> 
-				 	魅惑秋冬计！转眼天气转凉，而这个秋冬的复古tone调还在持续，无论是复古蓝绿还是招牌豆沙红，都将魅惑这个季节~我的秋冬保养也有新助手——佰草集鎏金瓶+鎏金眼霜，再忙碌的通告下也能告别有起床气的肌肤暗沉与黑眼圈！御美力满满，嘿嘿！
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_16.jpg"/>
-			</div>
-			<div class="a">
-				<div class="yan">
-			 		<p style="margin-top: 10px;font-family: courier;font-weight: bold;">美妆达人&nbsp;天使小盆友</p>
-				</div>
-				<div class="content" hidden>
-						<b>丨天使小盆友</b>
-				  <h6> 
-				 	无惧素颜计！许多爱妆MM应该跟我一样，难得的素面朝天会有点小不自在，我长时间的各种试妆难免会有皮肤暗沉的现象，很懂你们！所以，我的亮颜法宝是时候亮出来了——佰草集鎏金瓶，简直就是爱妆女性的福音，皮肤暗沉神马的，再见咯~
-				  </h6>
-				</div>
-				<img src="http://media.herborist.com.cn/media/images/yujieshidai/yujieshidai_kol_24.jpg"/>
-			</div>
-		</div>
-		<span id="prev" style="font-weight: 700;"><a href="day-one.html">上一张</a></span>
-		&nbsp;&nbsp;&nbsp;
-		<span id="next" style="font-weight: 700;"><a href="day02.html">下一张</a></span>
-	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<title>Yes It's Me</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="This is my pleasure" />
+		<link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
 		<script type="text/javascript">
-			$(jQuery).ready(function() {
-				$(".a").mouseenter(function() {
-					$(this).find(".yan").hide();
-					$(this).find(".content").show();
-					
-				});
-				$(".a").mouseleave(function() {
-					$(this).find(".yan").show();
-					$(this).find(".content").hide();
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
 				});
 			});
-			window.onload=function(){
-			document.getElementsByTagName('body')[0].className = 'load';
-		};
-
-		if((window.location != window.parent.location && !(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))) == true){
-	    	document.documentElement.style.overflowY = "scroll";
-		}
 		</script>
+	</head>
+
+	<body>
+		<!-- container -->
+		<!-- header -->
+		<div id="home" class="header">
+			<div class="container">
+				<!-- top-hedader -->
+				<div class="top-header">
+					<!-- /logo -->
+					<!--top-nav---->
+					<div class="top-nav">
+						<div class="navigation">
+							<div class="logo">
+								<h1><a href="index.html"><span>P</span>REFACE</a></h1>
+							</div>
+							<div class="navigation-right">
+								<span class="menu"><img src="images/menu.png" alt=" " /></span>
+								<nav class="link-effect-3" id="link-effect-3">
+									<ul class="nav1 nav nav-wil">
+										<li class="active">
+											<a data-hover="Home" href="index.html">Home</a>
+										</li>
+										<li>
+											<a class="scroll" data-hover="About" href="#about">About</a>
+										</li>
+										<li>
+											<a class="scroll" data-hover="Services" href="#services">Services</a>
+										</li>
+										<li>
+											<a class="scroll" data-hover="Experience" href="#work">Experience</a>
+										</li>
+										<li>
+											<a class="scroll" data-hover="Portfolio" href="#port">Portfolio</a>
+										</li>
+										<li>
+											<a class="scroll" data-hover="Blog" href="#blogs">Blog</a>
+										</li>
+										<li>
+											<a class="scroll" data-hover="Contact" href="#contact">Contact</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- script-for-menu -->
+								<script>
+									$("span.menu").click(function() {
+										$("ul.nav1").slideToggle(300, function() {
+											// Animation complete.
+										});
+									});
+								</script>
+								<!-- /script-for-menu -->
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<!-- /top-hedader -->
+					</div>
+					<div class="banner-info">
+						<div class="col-md-7 header-right">
+							<h1>Hi !</h1>
+							<h6>JAVA & H5 PROGRAMMER</h6>
+							<ul class="address">
+
+								<li>
+									<ul class="address-text">
+										<li><b>NAME</b></li>
+										<li>I'M YASHUN DAY</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="address-text">
+										<li><b>D.O.B</b></li>
+										<li>22-12-1995</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="address-text">
+										<li><b>PHONE </b></li>
+										<li>+86 152-2172-7195</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="address-text">
+										<li><b>ADDRESS </b></li>
+										<li>Jiangsu suzhou,China.</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="address-text">
+										<li><b>E-MAIL </b></li>
+										<li>
+											<a href="mailto:chenadys@foxmail.com">chenadys@foxmail.com</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="address-text">
+										<li><b>WEBSITE </b></li>
+										<li>
+											<a href="http://shaowe.win">www.shaowe.win</a>
+										</li>
+									</ul>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-5 header-left">
+							<img style="opacity: 0.6;border-radius: 100%;" src="images/flw.jpg" alt="">
+						</div>
+						<div class="clearfix"> </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- about -->
+		<div id="about" class="about">
+			<div class="col-md-6 about-left">
+				<div id="owl-demo1" class="owl-carousel owl-carousel2">
+					<div class="item">
+						<div class="about-left-grid">
+							<h2>Hi! I'm <span>YaShun Day</span></h2>
+							<p>Java applications are everywhere, from desktop office applications to network database applications, such as from the PC to the embedded mobile platform, from the Java Applet (Applet) to architecture huge J2EE enterprise solutions, everywhere has the form of Java, even among large space program in the United States, also use Java to develop control system and related software. The use of such a wide variety of Java has made Java engineers a great success in the field of software engineers!.</p>
+							<ul>
+								<li>
+									<a class="a-btn-a scroll" href="#port">My Work</a>
+								</li>
+								<li>
+									<a class="a-btn-h scroll" href="#contact">Hire Me</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<div class="about-left-grid">
+							<h2>Hi! I'm <span>YaShun Day</span></h2>
+							<p>With the rapid development of the Internet, the Web application has become more and more extensive, and the Java language [1] has also been developed rapidly. In 1994, Gosling developed a new, real-time, reliable, secure, interactive Web browser with Java that does not depend on any hardware platform or software platform..</p>
+							<ul>
+								<li>
+									<a class="a-btn-a scroll" href="#port">My Work</a>
+								</li>
+								<li>
+									<a class="a-btn-h scroll" href="#contact">Hire Me</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<div class="about-left-grid">
+							<h2>Hi! I'm <span>YaShun Day</span></h2>
+							<p>The browser name was HotJava, and in 1995, with the Java language, it was officially published in the industry, causing a huge stir and the status of Java was assured. Since then, the development has been very rapid.</p>
+							<ul>
+								<li>
+									<a class="a-btn-a scroll" href="#port">My Work</a>
+								</li>
+								<li>
+									<a class="a-btn-h scroll" href="#contact">Hire Me</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 about-right">
+
+			</div>
+			<div class="clearfix"> </div>
+			<link href="css/owl.carousel.css" rel="stylesheet">
+			<script src="js/owl.carousel.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo1").owlCarousel({
+						items: 1,
+						lazyLoad: false,
+						autoPlay: true,
+						navigation: false,
+						navigationText: false,
+						pagination: true,
+					});
+				});
+			</script>
+			<!-- Feedback -->
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo3").owlCarousel({
+						items: 1,
+						lazyLoad: false,
+						autoPlay: true,
+						navigation: false,
+						navigationText: true,
+						pagination: true,
+					});
+				});
+			</script>
+		</div>
+		<!-- /about -->
+		<!-- services -->
+		<div id="services" class="services">
+			<div class="container">
+				<div class="service-head one text-center ">
+					<h4>WHAT I DO</h4>
+					<h3>MY <span>SERVICES</span></h3>
+					<span class="border two"></span>
+				</div>
+				<!-- services-grids -->
+				<div class="wthree_about_right_grids w3l-agile">
+					<div class="col-md-6 wthree_about_right_grid">
+						<div class="col-xs-4 wthree_about_right_grid_left">
+							<div class="hvr-rectangle-in">
+								<i class="glyphicon glyphicon-pencil"></i>
+							</div>
+						</div>
+						<div class="col-xs-8 wthree_about_right_grid_right">
+							<h4>Web Design</h4>
+							<p>Self-study html5,Jquery,Proficient in CSS etc.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 wthree_about_right_grid">
+						<div class="col-xs-4 wthree_about_right_grid_left">
+							<div class="hvr-rectangle-in">
+								<i class="glyphicon glyphicon-cog"></i>
+							</div>
+						</div>
+						<div class="col-xs-8 wthree_about_right_grid_right">
+							<h4>JAVA Design</h4>
+							<p>The beauty of appearance is the same, the interesting soul is one.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 wthree_about_right_grid">
+						<div class="col-xs-4 wthree_about_right_grid_left">
+							<div class="hvr-rectangle-in">
+								<i class="glyphicon glyphicon-leaf"></i>
+							</div>
+						</div>
+						<div class="col-xs-8 wthree_about_right_grid_right">
+							<h4>Good Service</h4>
+							<p>If love can last for a long time, there is no need to stay together day and night.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 wthree_about_right_grid">
+						<div class="col-xs-4 wthree_about_right_grid_left">
+							<div class="hvr-rectangle-in">
+								<i class="glyphicon glyphicon-gift"></i>
+							</div>
+						</div>
+						<div class="col-xs-8 wthree_about_right_grid_right">
+							<h4>Good attitude</h4>
+							<p>Heaven and earth are old, and men are rare.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+				<!-- services-grids -->
+			</div>
+		</div>
+		<!-- services -->
+		<!--work-experience-->
+		<div id="work" class="work">
+			<div class="container">
+				<div class="service-head text-center">
+					<h4>WHAT I DID</h4>
+					<h3>MY <span>EXPERIENCE</span></h3>
+					<span class="border one"></span>
+				</div>
+				<div class="time-main w3l-agile">
+					<div class="col-md-6 year-info">
+						<ul class="year">
+							<li>2017</li>
+							<li>2016</li>
+							<li>2015</li>
+							<li>2013</li>
+							<li>2012</li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+					<ul class="col-md-6 timeline">
+						<li>
+							<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">苏州周梦信息科技有限公司</h4>
+								</div>
+								<div class="timeline-body">
+									<p>Learn Java and others</p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">上海大宇宙文化传播有限公司</h4>
+								</div>
+								<div class="timeline-body">
+									<p>Tmall customer service, this is my first time in company。</p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="timeline-badge danger"><i class="glyphicon glyphicon-briefcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">宁波亿姚餐饮有限公司</h4>
+								</div>
+								<div class="timeline-body">
+									<p>Its mellow fragrance, long on the lips.</p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="timeline-badge success"><i class="glyphicon glyphicon-briefcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">NO COMPANY</h4>
+								</div>
+								<div class="timeline-body">
+									<p>workers</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="timeline-badge pass"><i class="glyphicon glyphicon-briefcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">苏州芳香家居饰品有限公司</h4>
+								</div>
+								<div class="timeline-body">
+									<p>Perfumes are poisonous and women are poisonous.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!--//work-experience-->
+
+		<!-- portfolio -->
+		<div class="portfolio" id="port">
+			<div class="service-head text-center">
+				<h4>MY WORKS</h4>
+				<h3>MY <span>PORTFOLIO</span></h3>
+				<span class="border"></span>
+			</div>
+			<div class="portfolio-grids">
+				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$('#horizontalTab').easyResponsiveTabs({
+							type: 'default', //Types: default, vertical, accordion           
+							width: 'auto', //auto or any width like 600px
+							fit: true // 100% fit in a container
+						});
+					});
+				</script>
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>ALL</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>WEB DESIGN</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>MOBILE UI</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>ILLUSTRATIONS</span></li>
+						</ul>
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic4.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic5.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic14.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd  ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd">
+
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd">
+
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd">
+
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+									</a>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //portfolio -->
+		<!-- top-grids -->
+		<div class="blog" id="blogs">
+			<div class="container">
+				<div class="service-head text-center">
+					<h4>BLOGS</h4>
+					<h3>MY <span>BLOGS</span></h3>
+					<span class="border one"></span>
+				</div>
+				<div class="news-grid w3l-agile">
+					<div class="col-md-6 news-img">
+						<a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b1.jpg" alt=" " class="img-responsive"></a>
+
+					</div>
+					<div class="col-md-6 news-text">
+						<h3> <a href="#" data-toggle="modal" data-target="#myModal1">LEARNING</a></h3>
+						<ul class="news">
+							<li><i class="glyphicon glyphicon-user"></i>
+								<a href="#">Admin</a>
+							</li>
+							<li><i class="glyphicon glyphicon-comment"></i>
+								<a href="#">2 Comments</a>
+							</li>
+							<li><i class="glyphicon glyphicon-heart"></i>
+								<a href="#">50 Likes</a>
+							</li>
+							<li><i class="glyphicon glyphicon-tags"></i>
+								<a href="#">3 Tags</a>
+							</li>
+						</ul>
+						<p>Learning brings not only knowledge but also a person's self-cultivation and quality.
+						</br>
+						</br>
+						</br>
+						</p>
+						<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+				<div class="news-grid">
+
+					<div class="col-md-6 news-text two">
+						<h3> <a href="#" data-toggle="modal" data-target="#myModal1">TO FEEL AT EASE</a></h3>
+						<ul class="news">
+							<li><i class="glyphicon glyphicon-user"></i>
+								<a href="#">Admin</a>
+							</li>
+							<li><i class="glyphicon glyphicon-comment"></i>
+								<a href="#">2 Comments</a>
+							</li>
+							<li><i class="glyphicon glyphicon-heart"></i>
+								<a href="#">50 Likes</a>
+							</li>
+							<li><i class="glyphicon glyphicon-tags"></i>
+								<a href="#">3 Tags</a>
+							</li>
+						</ul>
+						<p>Sometimes the pressure you feel is not related to other people, the pressure to yourself and yourself. You may have a better position to welcome the following work.
+						</br>
+						</br>
+						</p>
+						<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+
+					</div>
+					<div class="col-md-6 news-img two">
+						<a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b2.jpg" alt=" " class="img-responsive"></a>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="news-grid">
+					<div class="col-md-6 news-img">
+						<a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b3.jpg" alt=" " class="img-responsive"></a>
+
+					</div>
+					<div class="col-md-6 news-text">
+						<h3> <a href="#" data-toggle="modal" data-target="#myModal1">WRITE THE CODE</a></h3>
+						<ul class="news">
+							<li><i class="glyphicon glyphicon-user"></i>
+								<a href="#">Admin</a>
+							</li>
+							<li><i class="glyphicon glyphicon-comment"></i>
+								<a href="#">2 Comments</a>
+							</li>
+							<li><i class="glyphicon glyphicon-heart"></i>
+								<a href="#">50 Likes</a>
+							</li>
+							<li><i class="glyphicon glyphicon-tags"></i>
+								<a href="#">3 Tags</a>
+							</li>
+						</ul>
+						<p>
+						</br>
+							A day without writing code, I feel miserable.
+						</br>
+						</br>
+						</br>
+						</p>
+						<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- top-grids -->
+		<!-- /blog-pop-->
+		<div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog about" role="document">
+				<div class="modal-content about">
+					<div class="modal-header">
+						<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body about">
+						<div class="about">
+
+							<div class="about-inner">
+
+								<img src="images/b3.jpg" alt="about" />
+								<h4 class="tittle">A Fews words about us</h4>
+								<p>Lorem ipsum dolor sit amet Integer gravida,Lorem ipsum dolor sit amet Integer gravida velit,Ming sits in the corner the whole day. She's into crochet. quis dolor tristiqumsan.Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. velit quis dolor tristiqumsan.</p>
+								<p>Lorem ipsum dolor sit amet. Integer gravida velit quis dolor tristiqumsan.anteposuerit litterarum formas humanitatis per seacula amet Integer gravida velit. </p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //blog-pop-->
+
+		<!-- /header -->
+		<div class="footer" id="contact">
+			<div class="container">
+				<div class="service-head one text-center">
+					<h4>CONTACT ME</h4>
+					<h3>GET <span>IN TOUCH WITH ME</span></h3>
+					<span class="border two"></span>
+				</div>
+				<!--<div class="mail_us">
+					<div class="col-md-6 mail_left">
+						<div class="contact-grid1-left">
+							<div class="contact-grid1-left1">
+								<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+								<h4>Contact By Email</h4>
+								<ul>
+									<li>Mail1:
+										<a href="mailto:info@example.com">info@example1.com</a>
+									</li>
+									<li>Mail2:
+										<a href="mailto:info@example.com">info@example2.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contact-grid1-left">
+							<div class="contact-grid1-left1">
+								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+								<h4>Contact By Phone</h4>
+								<ul>
+									<li>Phone: +0000 123 312</li>
+									<li>Fax: +123 312</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contact-grid1-left">
+							<div class="contact-grid1-left1">
+								<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+								<h4>Looking For Address</h4>
+								<ul>
+									<li>Address: General Pvt 66, Dong Da</li>
+									<li>Hanoi, Vietnam.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 mail_right">
+						<form action="#" method="post">
+							<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+							<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+							<input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+							<textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+							<input type="submit" value="Send">
+
+						</form>
+					</div>
+					<div class="clearfix"></div>
+				</div>-->
+				<div style="width: 1423px;height: 650px;border: 1px solid rgba(255,255,255,0);line-height: 650px;margin: auto;text-align: center;position: relative;left: -100px;color: #843534">The line that is tottering, to go through many wrong choices can go to maturity
+				</div>
+				<div class="copy_right text-center">
+					<p>&copy; 2016 Preface . All rights reserved | Design by
+						<a href="http://shaowe.win/" target="_blank">shaowe.</a>
+					</p>
+					<ul class="social-icons two">
+						<li>
+							<a href="#"> </a>
+						</li>
+						<li>
+							<a href="#" class="fb"> </a>
+						</li>
+						<li>
+							<a href="#" class="in"> </a>
+						</li>
+						<li>
+							<a href="#" class="dott"> </a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+		<!-- /container -->
+		<!--<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic9.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic6.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<h3>Image-Title</h3>
+								<img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content port-modal">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<div class="modal-body">
+								<img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		<!--start-smooth-scrolling-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+
+			});
+		</script>
+		<!--end-smooth-scrolling-->
+		<!-- //for bootstrap working -->
+		<script src="js/bootstrap.js"></script>
+
 	</body>
 
 </html>
