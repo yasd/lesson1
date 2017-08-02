@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 	<head>
 		<title>Yes It's Me</title>
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -12,6 +13,7 @@
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
+		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event) {
@@ -19,6 +21,7 @@
 					$('html,body').animate({
 						scrollTop: $(this.hash).offset().top
 					}, 1000);
+					$("img").lazyLoad();
 				});
 			});
 		</script>
@@ -569,9 +572,9 @@
 							</li>
 						</ul>
 						<p>Learning brings not only knowledge but also a person's self-cultivation and quality.
-						</br>
-						</br>
-						</br>
+							</br>
+							</br>
+							</br>
 						</p>
 						<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
 
@@ -598,8 +601,8 @@
 							</li>
 						</ul>
 						<p>Sometimes the pressure you feel is not related to other people, the pressure to yourself and yourself. You may have a better position to welcome the following work.
-						</br>
-						</br>
+							</br>
+							</br>
 						</p>
 						<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
 
@@ -632,11 +635,11 @@
 							</li>
 						</ul>
 						<p>
-						</br>
+							</br>
 							A day without writing code, I feel miserable.
-						</br>
-						</br>
-						</br>
+							</br>
+							</br>
+							</br>
 						</p>
 						<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
 
@@ -748,7 +751,7 @@
 						</li>
 						<li>
 							<a href="#" class="dott"> </a>
-						</li>	
+						</li>
 					</ul>
 				</div>
 			</div>
